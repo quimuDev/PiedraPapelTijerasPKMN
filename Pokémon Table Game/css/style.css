@@ -1,0 +1,135 @@
+body{
+    margin:0;
+}
+
+.tableGame{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stadiumTable{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/stadiumTable.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.stadium{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokeBall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 3s;
+}
+
+#pokeBall.rotate {
+    transform: rotate(2520deg);
+}
+
+.pokeBall1{
+    height: 59vh;
+    display: flex;
+    justify-content: center;
+}
+
+.pokeBall2{
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/pokeBall3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.playerChoice{
+    height: 21vh;
+    width: 21vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(4.5px);
+}
+
+#playerChoicesGrass,
+#playerChoicesFire,
+#playerChoicesWater{
+    transition: opacity 0.5s ease;
+}
+
+.machineChoice{
+    height: 21vh;
+    width: 21vh;
+    background-image: url("");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateY(4.5px);
+}
+
+.playButton {
+    height: 4rem; 
+    width: 4rem; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 17px;
+    background: none; 
+    border: none; 
+    cursor: pointer;
+}
+
+.choiceTable{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/typeBase.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.choices{
+    width: 43.7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.type img{
+    height: 9.3rem;
+    width: 9.3rem;
+}
+
+.type:hover {
+    transform: rotate(30deg);
+}

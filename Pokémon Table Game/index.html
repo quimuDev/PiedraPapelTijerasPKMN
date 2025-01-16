@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Pokémon Table Game</title>
+</head>
+<body>
+    <div class="tableGame">
+        <div class="stadiumTable">     
+            <div class="stadium">
+                <div class="playerChoice" id="playerChoice"></div>
+                <div class="pokeBall" id="pokeBall">
+                    <div class="pokeBall1"><img src="img/pokeBall2.png" alt=""></div>
+                    <div class="pokeBall2"><button type="button" class="playButton" id="playButton">PLAY</button></div>
+                    <div class="pokeBall1"><img src="img/pokeBall1.png" alt=""></div>
+                </div>
+                <div class="machineChoice" id="machineChoice"></div>
+            </div>
+        </div>
+        <div class="choiceTable">
+            <div class="choices">
+                <div class="type"><img src="img/grassType.png" alt="" name="playerChoicesGrass" id="playerChoicesGrass" data-type="grass"></div>
+                <div class="type"><img src="img/fireType.png" alt="" name="playerChoicesFire" id="playerChoicesFire" data-type="fire"></div>
+                <div class="type"><img src="img/waterType.png" alt="" name="playerChoicesWater" id="playerChoicesWater" data-type="water"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/logic.js"></script>
+</body>
+</html>
